@@ -1,4 +1,4 @@
-package tree;
+package leetcode226;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,8 +12,8 @@ public class FindInvertTree {
 			return null;
 		}
 
-		// Use a linkedlist with queue as interface, FIFO
-		final Queue<TreeNode> queue = new LinkedList<>();
+		// FIFO
+		Queue<TreeNode> queue = new LinkedList<>();
 
 		// offer is the same as add
 		queue.offer(root);
